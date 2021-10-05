@@ -1,0 +1,5 @@
+<div class="week-wrapper">
+  <div *ngFor="let day of weekdays" class="day" [ngClass]="{'current-day': day === currentDay}">
+    {{day | slice:0:3}}
+  </div>
+</div>

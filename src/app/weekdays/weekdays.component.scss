@@ -1,0 +1,34 @@
+.week-wrapper {
+  height: 100px;
+  width: 700px;
+  background: rgb(31, 140, 200);
+  background: -moz-linear-gradient(90deg, rgba(31, 140, 200, 1) 0%, rgba(1, 219, 180, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(31, 140, 200, 1) 0%, rgba(1, 219, 180, 1) 100%);
+  background: linear-gradient(90deg, rgba(31, 140, 200, 1) 0%, rgba(1, 219, 180, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f8cc8", endColorstr="#01dbb4", GradientType=1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  .day {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='7' stroke-linecap='square'/%3e%3c/svg%3e");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    color: white;
+    font-size:25px;
+    font-weight: 500;
+  }
+  .current-day{
+    background-image: none;
+    border: 2px solid white;
+  }
+}

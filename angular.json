@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "week"
+    }
+  },
+  "defaultProject": "week",
+  "cli": {
+    "analytics": false
+  }
 }
