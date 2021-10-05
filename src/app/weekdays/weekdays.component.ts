@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class WeekdaysComponent implements OnInit {
   weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   date = new Date();
-  currentDay =  this.weekdays[this.date.getDay()];
+  currentDay =  this.weekdays[this.date.getDay() - 1];
   constructor() {
   }
 
