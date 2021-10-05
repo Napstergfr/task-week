@@ -6,9 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./weekdays.component.scss']
 })
 export class WeekdaysComponent implements OnInit {
-  weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; //Weekdays array
   date = new Date();
-  currentDay =  this.weekdays[this.date.getDay() - 1];
+  currentDay =  this.weekdays[this.date.getDay()]; //This is to get the current day
   constructor() {
   }
 

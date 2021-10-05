@@ -1,4 +1,4 @@
-.week-wrapper {
+.week-wrapper { //This is the main wrapper contains the days
   height: 100px;
   width: 700px;
   background: rgb(31, 140, 200);
@@ -12,12 +12,13 @@
   align-items: center;
   justify-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  .day {
+  padding: 20px;
+  .day { //This is the dashed circle for the days
     height: 80px;
     width: 80px;
     border-radius: 50%;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='7' stroke-linecap='square'/%3e%3c/svg%3e");
+    //This is for the custom border as per the design
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +28,7 @@
     font-size:25px;
     font-weight: 500;
   }
-  .current-day{
+  .current-day{ //This is the heighlighted current day
     background-image: none;
     border: 2px solid white;
   }
